@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: var(--lightgray);
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -44,14 +43,16 @@ body {
 /* navbar styles begin */
 nav {
     display: flex;
-    width: 1150;
+    /* width: 1150; */
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1100px;
     height: 80px;
     margin: 0 auto;
     padding: 0 25px;
+    background-color: var(--lightgray);
+    overflow: hidden;
 }
 
 .nav-title {
@@ -78,6 +79,7 @@ nav>ul>li {
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: var(--lightgray);
 
 }
 
@@ -111,9 +113,10 @@ nav>ul>li {
 /* about style begin */
 .about {
     display: flex;
-    margin: 0 auto;
     gap: 30px;
     align-items: center;
+    background-color: white;
+    margin: 0 auto;
 }
 
 .about-image {
@@ -138,6 +141,83 @@ nav>ul>li {
     font-weight: 500;
     font-size: 45px;
 }
-.about-description{
+
+.about-description {
     margin-bottom: 32px;
 }
+
+/* about styles end */
+
+/* experienced styles begin */
+.experience {
+    margin-top: 100px;
+    display: flex;
+    background-color: white;
+}
+
+.experience-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+/* experienced styles end */
+
+/* fact styles */
+.fact {
+    margin-top: 150px;
+    text-align: left;
+    justify-content: center;
+}
+
+.transition {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(239, 8, 8);
+    color: lightgreen line-height:30px;
+    text-align: center;
+    transition: width 3s, color 3s, font-size 3s, transform 3s;
+    /* transition-property: width;
+    transition-duration: 3s;
+    /* transition-delay: 1s; */
+    /* transition-timing-function: ease-in; */
+
+}
+
+.transition:hover {
+    width: 300px;
+    color: #FF900E;
+    font-size: 20px;
+    transform: rotate(360deg);
+}
+
+/* experienced styles end */
+
+/* sponor styles begin */
+.sponserd {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sponsored-description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.sponsored-image{
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+/* sponor styles end */
+/* footer styles begin */
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: var(--lightgray);
+    height: 50px;
+    align-items: center;
+}
+/* footer styles end */
